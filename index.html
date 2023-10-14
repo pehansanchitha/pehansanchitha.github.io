@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pehan - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/aa63b150bc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logonew.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>IT Undergraduate</p>
+          <h1>Hi, I'm <span>Pehan</span> Sanchitha</h1>
+        </div>
+      </div>
+    </div>
+    <!-- About Me -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/usernew.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am an enthusiastic, self-motivated IT undergraduate with a
+              strong drive to achieve my goals. As a dedicated team player, I
+              actively contribute to collaborative environments and possess
+              strong leadership qualities. My objective is to explore new
+              opportunities in the IT industry as a Software Engineer, where I
+              can utilize my talents while embracing teamwork, effective
+              communication, and collective problem-solving.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Programming Languages</span><br />
+                  Java, C, Python
+                </li>
+                <li>
+                  <span>Web Development</span><br />
+                  HTML5, CSS3, JavaScript, ReactJS
+                </li>
+                <li><span>Mobile App Development</span><br />React Native</li>
+                <li><span>Backend Development</span><br />SpringBoot</li>
+                <li><span>Database</span><br />MySQL, MSSQL</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2 years+ experience as an IT Undergraduate</span></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>University of Moratuwa</span><br />BSc(Hons) in
+                  Information Technology<br />2021 - Present
+                </li>
+                <li>
+                  <span>Rahula College Matara</span><br />G.C.E.Advanced Level
+                  (2019) <br />G.C.E.Ordinary Level (2015)<br />2005 - 2019
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2><span>Web</span> Design</h2>
+            <p>
+              Crafting visually engaging websites that reflect your brand and
+              provide seamless navigation and optimal user experience.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2><span>App</span> Design</h2>
+            <p>
+              Intuitive mobile app designs that prioritize user experience,
+              functionality, and aesthetic appeal, optimizing engagement and
+              satisfaction.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2><span>UI/UX</span> Design</h2>
+            <p>
+              Streamlining interfaces for efficiency and creating delightful
+              user experiences that resonate with your audience, enhancing
+              overall usability and engagement.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work1.jpeg" />
+            <div class="layer">
+              <h3>Automated Can Crusher Reverse Vending Machine</h3>
+              <p>
+                Designed and developed an innovative Automated Can Crusher
+                Reverse Vending Machine that efficiently processes and recycles
+                aluminum cans, promoting environmental sustainability and
+                encouraging recycling practices.
+              </p>
+              <a
+                href="https://drive.google.com/drive/folders/1-ctLoRc8xJSMlTMWxk2NbBlItDpgfLBs?usp=sharing"
+                target="_blank"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work2.jpeg" />
+            <div class="layer">
+              <h3>Quiz App</h3>
+              <p>
+                Crafted an interactive and educational Quiz App to challenge
+                users and enrich learning experiences. Explore a variety of
+                quizzes with an engaging interface for a fun and informative
+                journey.
+              </p>
+              <div>
+                <a
+                  href="https://github.com/SBimsara/Maximus-Frontend.git"
+                  target="_blank"
+                  ><i class="fa-brands fa-github fa-xl"></i
+                ></a>
+                <a
+                  href="https://github.com/SBimsara/Quizz-Backend.git"
+                  target="_blank"
+                  ><i class="fa-brands fa-github fa-xl"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The app connect you to the talented people around the world.
+                Download it now.
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div> -->
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i
+              ><a class="email" href="mailto:pehansanchitha01@gmail.com"
+                >pehansanchitha01@gmail.com</a
+              >
+            </p>
+            <p>
+              <i class="fa-solid fa-square-phone"></i
+              ><a class="tel" href="tel:+94765448847">+94765448847</a>
+            </p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/pehan.sanchitha" target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://linkedin.com/in/pehan-sanchitha" target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/pehansanchitha" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <!-- <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a> -->
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Pehan Sanchitha. All rights reserved.</p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbws45Sh6H-tEbRb4ykbi9JI7YMUVMupKdOBx0uqrE1OAn6M5P8sGSDSAwJURq9cizGM/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
