@@ -308,12 +308,14 @@ h2 span {
   margin-right: 15px;
   font-size: 25px;
 }
-.email,.tel{
+.email,
+.tel {
   color: white;
   text-decoration: none;
   transition: transform 0.5s, color 0.5s, text-decoration 0.5s;
 }
-.email:hover,.tel:hover{
+.email:hover,
+.tel:hover {
   color: #ff6347;
   text-decoration: underline;
   transform: translateY(-5px);
@@ -353,10 +355,11 @@ form textarea {
   border-radius: 6px;
 }
 form .btn2 {
-  padding: 14px 60px;
+  padding: 14px 44px;
   font-size: 18px;
   margin-top: 20px;
   cursor: pointer;
+  border-radius: 4em;
 }
 
 /* Footer */
@@ -439,7 +442,7 @@ nav .fas {
     font-size: 14px;
   }
 }
-#msg{
+#msg {
   color: #61b752;
   margin-top: -40px;
   display: block;
